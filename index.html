@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>SAP FAQ</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>SAP</strong> <span>FAQ</span></a>
+					</header>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>S3L FAQ</h1>
+									</header>
+
+									<table>
+										<thead>
+										<tr>
+											<th style="width: 10%;">Name</th>
+											<th style="width: 50%;">Answer</th>
+											<th style="width: 10%;">Links</th>
+											<th style="width: 10%;">Topic Classification</th>
+											<th style="width: 10%;">Release specific</th>
+											<th style="width: 10%;">Information Availability</th>
+										</tr>
+										<tr>
+											<td>
+												
+											</td>
+											<td>
+												
+											</td>
+											<td>
+												<select id="digits1" style="font-size:15px; height:30px;">
+													<option value="">All</option>
+													<option value="Source: Customer Strategy Roadmap update s4hc">Source: Customer Strategy Roadmap update s4hc</option>
+													<option value="No">No</option>
+											</td>
+											<td>
+												<select id="digits2" style="font-size:15px; height:30px;">
+													<option value="">All</option>
+													<option value="3SL Overview">3SL Overview</option>
+													<option value="Developer Extensibility">Developer Extensibility</option>
+													<option value="Business Configuration">Business Configuration</option>
+													<option value="Transport Management">Transport Management</option>
+													<option value="Software and Content Lifecycle">Software and Content Lifecycle</option>
+													<option value="Test Automation Tool">Test Automation Tool</option>
+													<option value="SAP Cloud ALM">SAP Cloud ALM</option>
+													<option value="SAP Activate for 3SL">SAP Activate for 3SL</option>
+											</td>
+											<td>
+												<select id="digits3" style="font-size:15px; height:30px;">
+													<option value="">All</option>
+													<option value="Yes">Yes</option>
+													<option value="No">No</option>
+											</td>
+											<td>
+												<select id="digits4" style="font-size:15px; height:30px;">
+													<option value="" style="font-size:15px">All</option>
+													<option value="For external users" style="font-size:15px">For external users</option>
+													<option value="For internal users" style="font-size:15px">For internal users</option>
+											</td>
+										</tr>
+										</thead>
+							
+										<tbody id="target">
+										<tr>
+											<td>What is SAP S/4HANA Cloud?</td>
+											<td>As of May 2021, SAP S/4HANA Cloud supports Multi-Cloud Scenarios, and the offer is based upon two different points of departure:<br> Public Cloud: typical targets are Customer owning the ability and mindset for transformational projects, with low landscape complexity and the potential to use a greenfield approach (Examples: digital businesses and service industries). SAP offers a complete, modern, SaaS ERP solution with all the benefits of the public cloud, an accelerated path to innovation and the lowest total cost of ownership, a clean cloud ERP solution that doesn’t require converting outdated and legacy ERP processes and configurations, Standardized best practices to reimagine business processes. 
+												Public Cloud is currently offered as Essentials edition (ES) and Extended edition (EX).<br>
+												Private Cloud: typical targets are Customer owning the plans for an evolutionary journey to the cloud, High landscape complexity with mostly fragmented and highly customized systems (Example: large global manufacturers). SAP offers a rapid conversion of SAP ERP and SAP ECC to a modern, cloud-based architecture full enterprise management scope that includes a subscription and low total cost of ownership through cloud economics, perpetual license purchase option, SaaS landscape adoption at your own pace, Full, extensive, ERP functionality, including partner add-ons with the ability to extend and enhance.</td>
+												<td>Source: Customer Strategy Roadmap update s4hc</td>
+												<td>3SL Overview</td>
+												<td>No</td>
+												<td>For external users</td>
+										</tr>
+										<tr>
+											<td>Is there a Whitepaper/Guidance when and what to develop in Embedded Steampunk versus on the Business Technology Platform (BTP)?</td>
+											<td>We are currently compiling an extensibility guide that will address these questions, planned to be published after end of June 2022. Currently there is a table on help.sap.com at link.</td>
+												<td>No</td>
+												<td>Developer Extensibility</td>
+												<td>Yes</td>
+												<td>For internal users</td>
+										</tr>
+										<tr>
+											<td>Is there any locking mechanism in SAP Central Business Configuration while multiple people are working on the parallel customization tasks?</td>
+											<td>No, in SAP Central Business Configuration multiple team members can work on the same tasks.</td>
+												<td>No</td>
+												<td>Business Configuration</td>
+												<td>No</td>
+												<td>For external users</td>
+										</tr>
+										<tr>
+											<td>Do we need separate transports for country-specific customizing?</td>
+											<td>For SAP Central Business Configuration, there is one transport request per milestone as shown in the demo. For configurations via self-service configuration user interfaces (SSCUIs), you are free to create separate transports. However, if there are multiple transports, you have to be aware of the dependencies. There will be a minimum of 2 transports – one with SAP Central Business Configuration and one with SSCUI.<br>
+												SAP recommends that you start with one “default customizing” request and there can be only one “default customizing” request. For urgent changes, you can use additional transport requests. And in principle, you can also create a transport per country, LoB, etc. But we recommend separate transports only if you are sure that the configuration is independent from each other.</td>
+												<td>No</td>
+												<td>Transport Management</td>
+												<td>No</td>
+												<td>For external users</td>
+										</tr>
+										<tr>
+											<td>Do we have any feature to compare the configuration or any ABAP objects across the landscape? For example, can we compare the configuration for company code 1000 between DEV and TEST or PROD?</td>
+											<td>There is a compare functionality available from the 2108 release to compare configuration from TEST and PROD system to the DEV system. In future, you will also be able to compare configuration from the DEV system to the TEST and PROD system.</td>
+												<td>No</td>
+												<td>Software and Content Lifecycle</td>
+												<td>Yes</td>
+												<td>For internal users</td>
+										</tr>
+										<tr>
+											<td>Since test automation cannot be performed in a Starter System, is there an internal Q-system sandbox that SAP consultants can use to set up and execute test automates?</td>
+											<td>At this point of time, we do not have test automation tool provisioned on starter system. It would be Test system for 3-System Landscape (Q system for 2-System Landscape) where you would be able to leverage it and completely use the tool.</td>
+											<td>No</td>
+											<td>Test Automation Tool</td>
+											<td>Yes</td>
+											<td>For external users</td>
+										</tr>
+										<tr>
+											<td>What are the key advantages of SAP ALM compared to other project tools like JIRA? </td>
+											<td>It keeps all together: task & project mgt, process management, testing, deployment and all analytics and traceability ... Plus the content provided by SAP. In short.<br>
+											It is free of charge and will make upgrades much easier since we support the content lifecycle. And it is meant for all cloud and on-prem solutions.</td>
+											<td>No</td>
+											<td>SAP Cloud ALM</td>
+											<td>No</td>
+											<td>For external users</td>
+										</tr>
+										<tr>
+											<td>Do Activate and CALM run in the same release schedule, so they're always on the same release?</td>
+											<td>SAP Cloud ALM delivers capabilities in continuous feature delivery manner. SAP Cloud ALM always has the latest Activate content at SAP S/4HANA Cloud release time.<br>
+											SAP Activate is delivered in bi-weekly sprints with incremental improvements and at major SAP S/4HANA Cloud releases with major updates.</td>
+											<td>No</td>
+											<td>SAP Activate for 3SL</td>
+											<td>No</td>
+											<td>For external users</td>
+										</tr>
+										<tr>
+											<td>Do Activate and CALM run in the same release schedule, so they're always on the same release?</td>
+											<td>SAP Cloud ALM delivers capabilities in continuous feature delivery manner. SAP Cloud ALM always has the latest Activate content at SAP S/4HANA Cloud release time.<br>
+											SAP Activate is delivered in bi-weekly sprints with incremental improvements and at major SAP S/4HANA Cloud releases with major updates.</td>
+											<td>No</td>
+											<td>SAP Activate for 3SL</td>
+											<td>No</td>
+											<td>For external users</td>
+										</tr>
+										</tbody>
+									</table>
+							</section>
+
+					</div>
+			</div>
+
+			<script src="filterTable.v1.0.min.js"></script>
+			<script> filterTable( document.getElementById("target"), {
+			
+						2: document.getElementById("digits1"),
+			
+						3: document.getElementById("digits2"),
+			
+						4: document.getElementById("digits3"),
+			
+						5: document.getElementById("digits4"),
+					}
+				);
+			</script>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+	</body>
+</html>
